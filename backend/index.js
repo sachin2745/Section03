@@ -1,9 +1,12 @@
 // import
 const express = require('express');
-const cors = require('cors');
+
 
 // initialize
 const app = express();
+const port = 5000;
+
+const cors = require('cors');
 
 const postRouter = require('./routers/postRouter');
 
@@ -17,7 +20,7 @@ app.use(express.json());
 
 app.use('/post', postRouter);
 
-const port = 5000;
+
 
 // start express server
 
